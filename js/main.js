@@ -3,11 +3,11 @@ let price = prompt("Enter a price tag:")
 
 
 //REMOVE $ FROM INPUT AND CONVERT TO NUMBER
-priceNum = price.replace("$","");
+let  priceNum = price.replace("$","");
 priceNum = parseFloat(priceNum);
 
 //APPLY DISCOUNT & ROUND TO NEAREST CENTS
-discount = priceNum * .90;
+let discount = priceNum * .90;
 discount = discount.toFixed(2);
 
 //PRINT TO CONSOLE LOG & PRINT TO USER SCREEN
